@@ -7,6 +7,12 @@ TO-DOs
 - Add payment method to admin.microsoft.com
 - Get a free trial of Entra Admin P2 (won't be charged after time is up)
 - Set up billing alerts
+- Create conditional access policies
+- Create authentication method policies
+- Enable EntraID Protection
+- Setup Access Reviews
+
+
 
 EntraID
 - There are restrictions on nested groups
