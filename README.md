@@ -129,4 +129,29 @@ If you want, I can help you build:
 	•	A maturity model you can present to leadership
 	•	A governance + telemetry architecture diagram
 
+
+	Hello all, 
+
+I wanted to propose an access model that enables effective cloud security operations while maintaining strong governance, least-privilege enforcement, and separation of duties across the Azure environment.
+
+The objective is to provide sufficient visibility for monitoring, incident response, and threat hunting without introducing standing permissions that could impact production services or security configurations.
+
+Below is a recommended role-based model aligned with Microsoft security architecture and industry best practices.
+
+
+Security Operations and Monitoring (Read-Only / Investigative Access)
+• Security Reader (Microsoft Defender for Cloud) Provides centralized visibility across Microsoft Defender services, including alerting, exposure management, and security recommendations.
+
+Log Analytics and Telemetry Access (Critical for Detection and Threat Hunting) 
+• Log Analytics Reader on all relevant workspaces
+This role is read-only and does not permit changes to ingestion, retention, or log deletion.
+
+Governance and Security Posture Management
+• Security Reader for Defender for Cloud
+• Policy Reader for Azure Policy assignments and compliance visibility
+
+For elevated access requirements, I can propose details for a solution that leverages PIM.
+
+I believe this combined approach balances operational effectiveness with governance and risk management. Please let me know if you all would like to discuss further.
+
 Those are the kinds of artifacts that can get you out of the “corporate confinement” mindset you’ve been feeling and into strategic operator territory.
