@@ -48,3 +48,18 @@ These roles provide visibility into secure score, compliance posture, and policy
 For elevated access requirements related to response or remediation, I can propose a Just-in-Time model leveraging Azure Privileged Identity Management (PIM) to ensure time-bound access, approval workflows, and full auditability.
 
 I believe this combined approach balances operational effectiveness with governance and risk management. Please let me know if you would like to discuss this further or review additional details.
+
+Impact Analysis
+This change will onboard the OPSVES cloud environments into Prisma Cloud to improve centralized visibility, monitoring, and cloud security posture management. No production workloads or configurations will be modified. The change is limited to read-only onboarding and metadata collection.
+
+Pre-Implementation Test Plan
+Validate required permissions and API access. Confirm connectivity between OPSVES cloud accounts and Prisma Cloud. Review onboarding prerequisites and perform a pilot onboarding in a non-production environment.
+
+Implementation Plan
+Provision required roles and service accounts in OPSVES environments. Configure Prisma Cloud integration and onboard the targeted cloud accounts. Enable posture visibility and initial security policy baselines.
+
+Validation Plan
+Verify successful onboarding in Prisma Cloud. Confirm visibility of resources, alerts, and compliance findings. Validate that no configuration changes or service disruptions occurred.
+
+Backout Plan
+If issues arise, disable the Prisma Cloud integration and remove associated roles and service accounts. This will immediately stop data collection without impacting existing OPSVES cloud operations.
